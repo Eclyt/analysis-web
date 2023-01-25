@@ -9,6 +9,10 @@ import { ListingComponent } from './listing/listing.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
 import { MapGlobComponent } from './map-glob/map-glob.component';
+import { DraggingPieSlicesComponent } from './dragging-pie-slices/dragging-pie-slices.component';
+import { WorldTimeZoneComponent } from './world-time-zone/world-time-zone.component';
+import { PieChartLevelTwoComponent } from './pie-chart-level-two/pie-chart-level-two.component';
+// import { PieChartComponent } from './pie-chart/pie-chart.component';
 
 
 @NgModule({
@@ -17,7 +21,11 @@ import { MapGlobComponent } from './map-glob/map-glob.component';
     ListingComponent,
     AboutComponent,
     ContactComponent,
-    MapGlobComponent
+    MapGlobComponent,
+    DraggingPieSlicesComponent,
+    WorldTimeZoneComponent,
+    PieChartLevelTwoComponent,
+
   ],
   imports: [
     CommonModule,

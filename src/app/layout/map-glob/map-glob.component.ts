@@ -108,6 +108,7 @@ export class MapGlobComponent implements OnInit {
         tooltipText: "{name}"
         });
         
+        chart.set("zoomControl", am5map.ZoomControl.new(root, {}));
 
         // polygonSeries.mapPolygons.template.states.create("hover").setAll({
         //   fill: am5.color(0x6779356)
@@ -196,7 +197,7 @@ export class MapGlobComponent implements OnInit {
             cornerRadiusTR: 10,
             cornerRadiusBL: 10,
             cornerRadiusTL: 10,
-            maxHeight: 50,
+            maxHeight: 40,
             fillOpacity: 0.8,
         });
 
@@ -287,15 +288,15 @@ export class MapGlobComponent implements OnInit {
         series.set('heatRules', [
             {
                 dataField: 'valueX',
-                min: am5.color(0xe5dc36),
-                max: am5.color(0x5faa46),
+                min: am5.color(0xf7adb7),
+                max: am5.color(0xeb354e),
                 target: series.columns.template,
                 key: 'fill',
             },
             {
                 dataField: 'valueX',
-                min: am5.color(0xe5dc36),
-                max: am5.color(0x5faa46),
+                min: am5.color(0xf7adb7),
+                max: am5.color(0xeb354e),
                 target: circleTemplate,
                 key: 'fill',
             },
@@ -309,8 +310,8 @@ export class MapGlobComponent implements OnInit {
         cursor.lineY.set('visible', false);
 
         cursor.events.on('cursormoved', function () {
-            // let dataItem = series.get('tooltip').dataItem;
-            let dataItem = null
+            let dataItem = series.get('tooltip')?.dataItem;
+            // let dataItem = null
             if (dataItem) {
                 handleHover(dataItem);
             } else {
@@ -479,15 +480,15 @@ export class MapGlobComponent implements OnInit {
         series.set("heatRules", [
           {
             dataField: "valueY",
-            min: am5.color(0xe5dc36),
-            max: am5.color(0x5faa46),
+            min: am5.color(0xf7adb7),
+            max: am5.color(0xeb354e),
             target: series.columns.template,
             key: "fill"
           },
           {
             dataField: "valueY",
-            min: am5.color(0xe5dc36),
-            max: am5.color(0x5faa46),
+            min: am5.color(0xf7adb7),
+            max: am5.color(0xeb354e),
             target: circleTemplate,
             key: "fill"
           }
@@ -501,8 +502,8 @@ export class MapGlobComponent implements OnInit {
         cursor.lineY.set("visible", false);
     
         cursor.events.on("cursormoved", function () {
-        //   let dataItem = series.get("tooltip").dataItem;
-          let dataItem = null;
+          let dataItem = series.get("tooltip")?.dataItem;
+        //   let dataItem = null;
           if (dataItem) {
             handleHover(dataItem);
           } else {
