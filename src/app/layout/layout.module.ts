@@ -8,6 +8,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { ListingComponent } from './listing/listing.component';
 import { AboutComponent } from './about/about.component';
 import { ContactComponent } from './contact/contact.component';
+import { MapGlobComponent } from './map-glob/map-glob.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { ContactComponent } from './contact/contact.component';
     HomeComponent,
     ListingComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    MapGlobComponent
   ],
   imports: [
     CommonModule,

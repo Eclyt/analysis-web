@@ -15,14 +15,10 @@ export class HomeComponent implements OnInit {
     }
 
     getUserData() {
-
-        this.api.get('login').subscribe((res: any) => {
-            console.log("Response :::::::::::::;")
+        
+        this.api.get('login').subscribe((res: any) => {          
             this.userInfo = res['data']
-            // this.userInfo = res
-            // console.log(":::::::::::::::::" + this.userInfo, " showing here data ")
-
-
+            console.log(":::::::::::::::::" + this.userInfo, " showing here data ")
         })
     }
     customOptions: OwlOptions = {
