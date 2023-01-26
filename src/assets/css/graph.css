@@ -18,3 +18,9 @@
     width: 100%;
     height: 400px;
 }
+canvas #id-79-title {
+    display: none;
+}
+canvas .AmChartsLogo{
+    display: none;
+}

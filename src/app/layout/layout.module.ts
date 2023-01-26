@@ -12,8 +12,10 @@ import { MapGlobComponent } from './map-glob/map-glob.component';
 import { DraggingPieSlicesComponent } from './dragging-pie-slices/dragging-pie-slices.component';
 import { WorldTimeZoneComponent } from './world-time-zone/world-time-zone.component';
 import { PieChartLevelTwoComponent } from './pie-chart-level-two/pie-chart-level-two.component';
-// import { PieChartComponent } from './pie-chart/pie-chart.component';
-
+import { MapGlobeRotatingComponent } from './map-globe-rotating/map-globe-rotating.component';
+import { MapGlobeDynamicComponent } from './map-globe-dynamic/map-globe-dynamic.component';
+import { MapGlobePulsatingBulletsComponent } from './map-globe-pulsating-bullets/map-globe-pulsating-bullets.component';
+import { MapGlobeWorkingHoursComponent } from './map-globe-working-hours/map-globe-working-hours.component';
 
 @NgModule({
   declarations: [
@@ -25,6 +27,10 @@ import { PieChartLevelTwoComponent } from './pie-chart-level-two/pie-chart-level
     DraggingPieSlicesComponent,
     WorldTimeZoneComponent,
     PieChartLevelTwoComponent,
+    MapGlobeRotatingComponent,
+    MapGlobeDynamicComponent,
+    MapGlobeWorkingHoursComponent,
+    MapGlobePulsatingBulletsComponent
 
   ],
   imports: [

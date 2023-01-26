@@ -8,6 +8,10 @@ import { MapGlobComponent } from './map-glob/map-glob.component';
 import { DraggingPieSlicesComponent } from './dragging-pie-slices/dragging-pie-slices.component';
 import { WorldTimeZoneComponent } from './world-time-zone/world-time-zone.component';
 import { PieChartLevelTwoComponent } from './pie-chart-level-two/pie-chart-level-two.component';
+import { MapGlobeRotatingComponent } from './map-globe-rotating/map-globe-rotating.component';
+import { MapGlobeDynamicComponent } from './map-globe-dynamic/map-globe-dynamic.component';
+import { MapGlobeWorkingHoursComponent } from './map-globe-working-hours/map-globe-working-hours.component';
+import { MapGlobePulsatingBulletsComponent } from './map-globe-pulsating-bullets/map-globe-pulsating-bullets.component';
 const routes: Routes = [
     {
         path: 'home',
@@ -44,6 +48,22 @@ const routes: Routes = [
     {
         path: 'pie-chart-level-two',
         component: PieChartLevelTwoComponent,
+    },
+    {
+        path: 'map-globe-rotating',
+        component: MapGlobeRotatingComponent,
+    },
+    {
+        path: 'map-globe-dynamic',
+        component: MapGlobeDynamicComponent,
+    },
+    {
+        path: 'map-globe-working-hours',
+        component: MapGlobeWorkingHoursComponent,
+    },
+    {
+        path: 'map-globe-pulsating-bullets',
+        component: MapGlobePulsatingBulletsComponent,
     },
 ];
 
