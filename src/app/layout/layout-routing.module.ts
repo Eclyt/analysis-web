@@ -12,6 +12,9 @@ import { MapGlobeRotatingComponent } from './map-globe-rotating/map-globe-rotati
 import { MapGlobeDynamicComponent } from './map-globe-dynamic/map-globe-dynamic.component';
 import { MapGlobeWorkingHoursComponent } from './map-globe-working-hours/map-globe-working-hours.component';
 import { MapGlobePulsatingBulletsComponent } from './map-globe-pulsating-bullets/map-globe-pulsating-bullets.component';
+import { MapGlobeDrillComponent } from './map-globe-drill/map-globe-drill.component';
+import { MapGlobeProjectionComponent } from './map-globe-projection/map-globe-projection.component';
+import { MapGlobeRotatingCircleComponent } from './map-globe-rotating-circle/map-globe-rotating-circle.component';
 const routes: Routes = [
     {
         path: 'home',
@@ -64,6 +67,18 @@ const routes: Routes = [
     {
         path: 'map-globe-pulsating-bullets',
         component: MapGlobePulsatingBulletsComponent,
+    },
+    {
+        path: 'map-globe-drill',
+        component: MapGlobeDrillComponent,
+    },
+    {
+        path: 'map-globe-projection',
+        component: MapGlobeProjectionComponent,
+    },
+    {
+        path: 'map-globe-rotating-circle',
+        component: MapGlobeRotatingCircleComponent,
     },
 ];
 
