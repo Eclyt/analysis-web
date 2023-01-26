@@ -19,6 +19,9 @@ import { MapGlobeWorkingHoursComponent } from './map-globe-working-hours/map-glo
 import { MapGlobeDrillComponent } from './map-globe-drill/map-globe-drill.component';
 import { MapGlobeProjectionComponent } from './map-globe-projection/map-globe-projection.component';
 import { MapGlobeRotatingCircleComponent } from './map-globe-rotating-circle/map-globe-rotating-circle.component';
+import { MapGlobePinBulletsComponent } from './map-globe-pin-bullets/map-globe-pin-bullets.component';
+import { MapGlobePieChartsComponent } from './map-globe-pie-charts/map-globe-pie-charts.component';
+import { MapGlobeGroupedComponent } from './map-globe-grouped/map-globe-grouped.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +39,10 @@ import { MapGlobeRotatingCircleComponent } from './map-globe-rotating-circle/map
     MapGlobePulsatingBulletsComponent,
     MapGlobeDrillComponent,
     MapGlobeProjectionComponent,
-    MapGlobeRotatingCircleComponent
+    MapGlobeRotatingCircleComponent,
+    MapGlobePinBulletsComponent,
+    MapGlobePieChartsComponent,
+    MapGlobeGroupedComponent
 
   ],
   imports: [
