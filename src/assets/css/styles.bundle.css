@@ -1445,7 +1445,7 @@ only screen and (min-resolution:2dppx) {
 
 .line-tabs.nav-tabs .nav-link.active {
     color: #eb354e;
-    border-bottom-color: #eb354e
+    border-bottom-color: #eb354e;
 }
 
 .link {
@@ -2094,45 +2094,46 @@ only screen and (min-resolution:2dppx) {
     position: relative
 }
 
-#header.colored-header,
+body > app-root > app-home > app-header > header > nav > div >
 #header.plain-header.scrolled {
     background-color: #fff;
     -webkit-box-shadow: 0 1px .75rem .125rem rgba(0, 0, 0, .1);
     box-shadow: 0 1px .75rem .125rem rgba(0, 0, 0, .1)
 }
 
-#header.colored-header:after,
+body > app-root > app-home > app-header > header > nav > div >:after,
 #header.plain-header.scrolled:after {
     display: none !important
 }
 
-#header.colored-header .navbar-brand .compact.light,
+body > app-root > app-home > app-header > header > nav > div > .navbar-brand .compact.light,
 #header.plain-header.scrolled .navbar-brand .compact.light {
     display: none
 }
 
-#header.colored-header .navbar-brand .compact.dark,
+body > app-root > app-home > app-header > header > nav > div > .navbar-brand .compact.dark,
 #header.plain-header.scrolled .navbar-brand .compact.dark {
     display: block
 }
 
-#header.colored-header .navbar-nav>li>a:not(.btn),
+body > app-root > app-home > app-header > header > nav > div > .navbar-nav>li>a:not(.btn),
 #header.plain-header.scrolled .navbar-nav>li>a:not(.btn) {
-    color: #1c191a
+    color: #eb354e
 }
 
-#header.colored-header .navbar-nav>li>a:not(.btn):hover,
+body > app-root > app-home > app-header > header > nav > div > .navbar-nav>li>a:not(.btn):hover,
 #header.plain-header.scrolled .navbar-nav>li>a:not(.btn):hover {
     color: #eb354e
 }
 
-#header.colored-header #hamburger span:after,
-#header.colored-header #hamburger span:before,
+body > app-root > app-home > app-header > header > nav > div > #hamburger span:after,
+body > app-root > app-home > app-header > header > nav > div > #hamburger span:before,
 #header.plain-header.scrolled #hamburger span:after,
 #header.plain-header.scrolled #hamburger span:before {
     content: "";
     display: block;
-    background-color: #1c191a
+    background-color: #eb354e
+    
 }
 
 @media (min-width:576px) {
@@ -2160,6 +2161,7 @@ only screen and (min-resolution:2dppx) {
     transition: .4s all ease;
     -webkit-transform: translateY(-100%);
     transform: translateY(-100%)
+    
 }
 
 #header #nav {
@@ -2331,6 +2333,7 @@ only screen and (min-resolution:2dppx) {
     position: absolute;
     top: 1.325rem;
     right: 0;
+    
     padding: 3px;
     border-left: 1px solid #1c191a;
     border-bottom: 1px solid #1c191a;
@@ -3422,7 +3425,7 @@ only screen and (min-resolution:2dppx) {
 .cluster-visible {
     font-size: 1rem !important;
     font-weight: 600 !important;
-    font-family: "Open Sans", sans-serif !important;
+    font-family: 'SF Pro Text' !important;
     color: #fff !important;
     background-color: #eb354e;
     border-radius: 50%
