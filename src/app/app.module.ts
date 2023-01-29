@@ -7,8 +7,9 @@ import { CommanModule } from './comman/comman.module';
 import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AuthInterceptorService } from './service/auth-interceptor.service';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AppEnumComponent } from './models/app-enum/app-enum.component';
 @NgModule({
-    declarations: [AppComponent],
+    declarations: [AppComponent, AppEnumComponent],
     imports: [
         BrowserModule,
         AppRoutingModule,
