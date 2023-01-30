@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ApiService } from 'src/app/service/api.service';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 @Component({
     selector: 'app-home',
     templateUrl: './home.component.html',
@@ -8,10 +9,27 @@ import { ApiService } from 'src/app/service/api.service';
 })
 export class HomeComponent implements OnInit {
     userInfo: any;
-    constructor(private api: ApiService) { }
+    // link: SafeResourceUrl;
+    thumbnail:any;
+    safeSrc: any=[
+        {
+            "_id":"qhhdqjk",
+            "link":  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/9gM7d1m_xnw"),
+        },
+        {
+            "_id":"qhhdqjk",
+            "link":this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/hoxpwvT44oo")
+        } 
+
+    ];
+    constructor(private api: ApiService,private sanitizer: DomSanitizer) { 
+        // this.safeSrc =  this.sanitizer.bypassSecurityTrustResourceUrl("https://www.youtube.com/embed/9gM7d1m_xnw");
+    }
 
     ngOnInit(): void {
         this.getUserData()
+
+        // console.log("Yo ::O  " + JSON.stringify(this.safeSrc))
     }
 
     getUserData() {

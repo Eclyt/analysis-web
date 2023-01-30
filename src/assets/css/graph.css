@@ -102,6 +102,9 @@ main {
 .footer{
     display: none;
 }
+.phone{
+    display: none;
+}
 .intro-section-title{
     margin-top: -150px;
 }
@@ -165,6 +168,25 @@ main {
         margin: 0 auto;
         position: absolute;
     }
+    #headerAfterScroll > nav > div > ul > li:nth-child(2) > a{
+        display: none;
+    }
+    #header > nav > div > ul > li:nth-child(2) > a{
+        display: none;
+    }
+    #intro_section{
+        display: none;
+    }
+    #footer > div > div.row.list-bunch{
+        display: none;
+    }
+    #header{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+    
 }
 /* footer */
 
