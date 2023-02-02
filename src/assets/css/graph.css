@@ -111,6 +111,7 @@ main {
 .top_sec{
     margin-top: -50px;
 }
+
 /* (min-width:768px) */
 @media  only screen and (max-width: 768px)  {
     .footer {
@@ -186,7 +187,17 @@ main {
     .phone{
         display: block;
     }
+    .phone-div{
+       
+        background-color:  #eb354e;
+        height: 350px;
+        width: 100%;        
+        display: block;
+        position: absolute;
+    }
+ 
     
 }
-/* footer */
+
+
 

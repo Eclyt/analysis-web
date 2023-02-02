@@ -2413,7 +2413,8 @@ body > app-root > app-home > app-header > header > nav > div > #hamburger span:b
     right: 0;
     bottom: 0;
     left: 0;
-    z-index: 1
+    z-index: 1;
+    
 }
 
 .banner-ipad,
@@ -2433,7 +2434,9 @@ body > app-root > app-home > app-header > header > nav > div > #hamburger span:b
 
 .hero-banner .banner-content .intro-section-title,
 .hero-banner .blog-banner-content .intro-section-title {
-    color: #fff
+    color: #fff;
+    text-align: center;
+    
 }
 
 .banner-content,
@@ -2634,7 +2637,7 @@ body > app-root > app-home > app-header > header > nav > div > #hamburger span:b
 
 @media (min-width:576px) {
     .intro-section-title {
-        font-size: 4rem
+        font-size: 3rem
     }
 
     .section .section-title {
@@ -2813,7 +2816,7 @@ body > app-root > app-home > app-header > header > nav > div > #hamburger span:b
 
 .container-half {
     padding-left: 15px;
-    padding-right: 15px
+    padding-right: 15px;
 }
 
 @media (min-width:992px) {
