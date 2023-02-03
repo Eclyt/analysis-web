@@ -69,7 +69,9 @@ export class MapGlobePinBulletsComponent implements OnInit {
             am5map.MapPolygonSeries.new(root, {
                 geoJSON: am5geodata_continentsLow,
                 exclude: ["antarctica"],
-                fill: am5.color(0xbbbbbb)
+                fill: am5.color(0xeb354e),
+                stroke: am5.color(0xf38493)
+                // fill: am5.color(0xbbbbbb)
             })
         );
 

@@ -101,7 +101,8 @@ export class MapGlobePulsatingBulletsComponent implements OnInit {
         // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/#Background_polygon
         let backgroundSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {}));
         backgroundSeries.mapPolygons.template.setAll({
-            fill: root.interfaceColors.get("alternativeBackground"),
+            stroke: am5.color(0xf38493),
+            // fill: root.interfaceColors.get("alternativeBackground"),
             fillOpacity: 0,
             strokeOpacity: 0
         });
@@ -116,7 +117,9 @@ export class MapGlobePulsatingBulletsComponent implements OnInit {
         // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
         let polygonSeries = chart.series.push(
             am5map.MapPolygonSeries.new(root, {
-                geoJSON: am5geodata_worldLow
+                geoJSON: am5geodata_worldLow,
+                fill: am5.color(0xeb354e),
+                stroke: am5.color(0xf38493)
             })
         );
 
@@ -141,7 +144,7 @@ export class MapGlobePulsatingBulletsComponent implements OnInit {
                     radius: 4,
                     tooltipY: 0,
                     fill: colorset.next(),
-                    strokeOpacity: 0,
+                    strokeOpacity: 0.9,
                     tooltipText: "{title}"
                 })
             );

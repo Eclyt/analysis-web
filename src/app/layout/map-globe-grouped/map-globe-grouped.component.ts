@@ -107,6 +107,8 @@ export class MapGlobeGroupedComponent implements OnInit {
         // Create world polygon series
         let worldSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
             geoJSON: am5geodata_worldLow,
+            fill: am5.color(0xeb354e),
+            stroke: am5.color(0xf38493),
             exclude: ["AQ"]
         }));
 

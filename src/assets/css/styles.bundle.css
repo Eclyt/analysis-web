@@ -1204,7 +1204,9 @@ only screen and (min-resolution:2dppx) {
 }
 
 .blog-card .blog-title {
-    font-weight: 700
+    font-family: 'SF Pro Text' !important;
+    font-weight: normal;
+    font-size: small;
 }
 
 .author-card {

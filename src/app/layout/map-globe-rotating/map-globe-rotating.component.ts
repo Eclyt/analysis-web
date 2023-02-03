@@ -57,8 +57,8 @@ export class MapGlobeRotatingComponent implements OnInit {
     label.marginBottom = 30;
     label.background.strokeOpacity = 0.3;
     label.background.stroke =am4core.color("#927459");
-    label.background.fill = am4core.color("#f9e3ce");
-    label.background.fillOpacity = 0.6;
+    label.background.fill = am4core.color("#f38493");
+    label.background.fillOpacity = 0.3;
     
     let dataSource = chart.createChild(am4core.TextLink)
     dataSource.text = "Data source: WHO";
@@ -135,8 +135,8 @@ export class MapGlobeRotatingComponent implements OnInit {
     
     let template = polygonSeries.mapPolygons.template;
     template.nonScalingStroke = true;
-    template.fill = am4core.color("#f9e3ce");
-    template.stroke = am4core.color("#e2c9b0");
+    template.fill = am4core.color("#eb354e");
+    template.stroke = am4core.color("#f38493");
     
     polygonSeries.calculateVisualCenter = true;
     template.propertyFields.id = "id";
@@ -156,7 +156,7 @@ export class MapGlobeRotatingComponent implements OnInit {
     
     let hs = polygonSeries.mapPolygons.template.states.create("hover");
     hs.properties.fillOpacity = 1;
-    hs.properties.fill = am4core.color("#deb7ad");
+    hs.properties.fill = am4core.color("#f38493");
     
     
     let graticuleSeries = chart.series.push(new am4maps.GraticuleSeries());
@@ -174,7 +174,7 @@ export class MapGlobeRotatingComponent implements OnInit {
     // measelsSeries.tooltip.dy = -5;
     
     let measelTemplate = measelsSeries.mapPolygons.template;
-    measelTemplate.fill = am4core.color("#bf7569");
+    measelTemplate.fill = am4core.color("#f7adb7");
     measelTemplate.strokeOpacity = 0;
     measelTemplate.fillOpacity = 0.75;
     measelTemplate.tooltipPosition = "fixed";

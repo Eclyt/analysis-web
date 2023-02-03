@@ -64,18 +64,19 @@ export class MapGlobeDrillComponent implements OnInit {
         // https://www.amcharts.com/docs/v5/charts/map-chart/map-polygon-series/
         let worldSeries = chart.series.push(am5map.MapPolygonSeries.new(root, {
             geoJSON: am5geodata_worldLow,
+            stroke: am5.color(0xf38493),
             exclude: ["AQ"]
         }));
 
         worldSeries.mapPolygons.template.setAll({
             tooltipText: "{name}",
             interactive: true,
-            fill: am5.color(0xaaaaaa),
+            fill: am5.color(0xf38493),
             templateField: "polygonSettings"
         });
 
         worldSeries.mapPolygons.template.states.create("hover", {
-            fill: colors.getIndex(9)
+            fill: am5.color(0xeb354e)
         });
 
         worldSeries.mapPolygons.template.events.on("click", (ev) => {
@@ -109,11 +110,11 @@ export class MapGlobeDrillComponent implements OnInit {
         countrySeries.mapPolygons.template.setAll({
             tooltipText: "{name}",
             interactive: true,
-            fill: am5.color(0xaaaaaa)
+            fill: am5.color(0xf38493)
         });
 
         countrySeries.mapPolygons.template.states.create("hover", {
-            fill: colors.getIndex(9)
+            fill: am5.color(0xeb354e)
         });
 
 
@@ -150,7 +151,7 @@ export class MapGlobeDrillComponent implements OnInit {
             layout: root.horizontalLayout,
             cursorOverStyle: "pointer",
             background: am5.RoundedRectangle.new(root, {
-                fill: am5.color(0xffffff),
+                fill: am5.color(0xf38493),
                 fillOpacity: 0.2
             }),
             visible: false

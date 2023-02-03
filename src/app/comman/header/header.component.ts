@@ -30,7 +30,7 @@ export class HeaderComponent implements OnInit {
     @HostListener("window:scroll", [])
     onWindowScroll() {
         const offset = this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
-        if (offset > 150) {
+        if (offset > 30) {
             this.scrollTop= false;
             this.scrollSticky=true
             // this.renderer2.removeClass(this.el.nativeElement, 'before');
