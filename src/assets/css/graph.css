@@ -44,15 +44,17 @@ canvas .AmChartsLogo {
 
 .header .navbar-brand {
     padding: 0;
-    
+
 }
+
 /* .header .nav .container li .nav-item a {
     padding: 0;
     color: #eb354e;
 } */
-body > app-root > app-home > app-header > header > nav > div > ul > li:nth-child(1) > a{
+body>app-root>app-home>app-header>header>nav>div>ul>li:nth-child(1)>a {
     color: #eb354e;
 }
+
 /* #hamburger{
     color: #eb354e;
 } */
@@ -99,21 +101,33 @@ main {
     z-index: 99;
     backdrop-filter: blur(10px);
 }
-.footer{
+
+.footer {
     display: none;
 }
-.phone{
+
+.header-phone {
     display: none;
 }
-.intro-section-title{
+
+#grad1 {
+    display: none;
+}
+
+.phone {
+    display: none;
+}
+
+.intro-section-title {
     margin-top: -150px;
 }
-.top_sec{
+
+.top_sec {
     margin-top: -50px;
 }
 
 /* (min-width:768px) */
-@media  only screen and (max-width: 768px)  {
+@media only screen and (max-width: 768px) {
     .footer {
         width: 100%;
         height: auto;
@@ -137,8 +151,8 @@ main {
         backdrop-filter: saturate(125%) blur(10px);
         display: block;
     }
-    
-    
+
+
     .footer .btn {
         width: 60px;
         height: 60px;
@@ -148,7 +162,7 @@ main {
         display: block;
         vertical-align: middle;
     }
-    
+
     .footer .btn i {
         width: 24px;
         margin: 0 auto;
@@ -156,7 +170,7 @@ main {
         vertical-align: middle;
         position: relative;
     }
-    
+
     .footer .btn.active i:after {
         content: "";
         left: 0;
@@ -169,35 +183,78 @@ main {
         margin: 0 auto;
         position: absolute;
     }
-    #headerAfterScroll > nav > div > ul > li:nth-child(2) > a{
+
+    #headerAfterScroll>nav>div>ul>li:nth-child(2)>a {
         display: none;
     }
-    #header > nav > div > ul > li:nth-child(2) > a{
+
+    #header>nav>div>ul>li:nth-child(2)>a {
         display: none;
     }
-    #intro_section{
+
+    #intro_section {
         display: none;
     }
-    #footer > div > div.row.list-bunch{
+
+    #footer>div>div.row.list-bunch {
         display: none;
     }
-    #header{
+
+    #header {
         display: none;
     }
-    .phone{
+
+    .phone {
         display: block;
     }
-    .phone-div{
-       
-        background-color:  #eb354e;
+
+    .phone-div {
+
+        background-color: #eb354e;
         height: 350px;
-        width: 100%;        
+        width: 100%;
         display: block;
         position: absolute;
     }
- 
-    
+
+    #headerAfterScroll {
+        display: none;
+    }
+
+    .header-phone {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px 5px;
+        z-index: 99;
+        backdrop-filter: blur(10px);
+        display: inline-block;
+    }
+
+    .header-phone .navbar-brand {
+        padding: 0;
+    }
+
+    .header-phone .navbar-brand>img {
+        max-height: 44px;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+    }
+
+    .header-phone .navbar-brand h6 {
+        /* font-size: 20px; */
+        color: #2F2D51;
+        vertical-align: middle;
+        display: inline-block;
+        margin-top: 0;
+        margin-left: 10px;
+    }
+
+    #grad1 {
+        height: 200px;
+        background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+        display: block;
+    }
 }
-
-
-
