@@ -3,179 +3,58 @@
 <!----------------------------Home Page Design ------------------------->
 
 <div id="wrapper">
+    <div id="grad1"></div>
     <section class="intro_phone_section">
-        <div id="grad1"></div>
-        <!-- <div class="phone-div">
-            <h3 class="intro-section-phone-title">Where Power Meets Purpose. 
-            </h3>
-        </div> -->
-        <!-- <div class="service-phone">
-            <div class="col-lg-9">
-                <div class="">
-                  
-                    <div class="row list-bunch">
-                        <div class="col-xl-4 col-sm-6 list-bunch-item">
-                            <div class="listing-card">
-                                <div class="listing-image">
-                                 
-                                </div>
-                                <div class="listing-content">
-                                    <div class="listing-content-body">
-                                        <div class="listing-content-head mb-3">
-                                            <div class="listing-rating"><span
-                                                    class="listing-rating-number">4.5</span> <i
-                                                    class="ion-md-star"></i></div>
-                                            <div class="listing-desc"><a href="list-details.html"
-                                                    class="listing-title text-truncate">First dating cafe</a>
-                                                <p>1096 Tenmile Road,<br>Needham, Massachusetts - 02192</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center ml-auto"><a href="#"
-                                            class="icon-sm text-danger"><i class="ion-md-create"></i> </a><a
-                                            href="#" class="icon-sm text-dark ml-3"><i
-                                                class="ion-md-trash"></i></a></div>
-                                </div>
+
+        <section class="hm-slider mobile-open">
+            <div class="container">
+                <!-- <div class="prp mobile-open">
+                    <h2>Eclyt</h2>
+                </div> -->
+                <owl-carousel-o [options]="customOptions1" class="slidehome">
+                    <ng-template carouselSlide>
+                        <div class="bg-hm" style="background-image: url('assets/images/listing/band.jpg');">
+                            <div class="card-hm"> 
+                                <p>                                 
+                                    Improved understanding: Analysis allows for a deeper understanding of complex systems and
+                                    concepts by breaking them down into smaller, more manageable parts.In finance, analysis
+                                    is used to evaluate investment opportunities and assess the performance of investment
+                                    portfolios.
+                                </p>
                             </div>
                         </div>
-                        <div class="col-xl-4 col-sm-6 list-bunch-item">
-                            <div class="listing-card">
-                                <div class="listing-image"><a href="list-details.html"><img
-                                            src="assets/images/listing/gym.jpg" class="retina" alt=""></a></div>
-                                <div class="listing-content">
-                                    <div class="listing-content-body">
-                                        <div class="listing-content-head mb-3">
-                                            <div class="listing-rating"><span
-                                                    class="listing-rating-number">4.5</span> <i
-                                                    class="ion-md-star"></i></div>
-                                            <div class="listing-desc"><a href="list-details.html"
-                                                    class="listing-title text-truncate">Alpha Muscle Center</a>
-                                                <p>4240 Oak Way,<br>Daykin, Nebraska - 68338</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center ml-auto"><a href="#"
-                                            class="icon-sm text-danger"><i class="ion-md-create"></i> </a><a
-                                            href="#" class="icon-sm text-dark ml-3"><i
-                                                class="ion-md-trash"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6 list-bunch-item">
-                            <div class="listing-card">
-                                <div class="listing-image"><a href="list-details.html"><img
-                                            src="assets/images/listing/band.jpg" class="retina" alt=""></a>
-                                </div>
-                                <div class="listing-content">
-                                    <div class="listing-content-body">
-                                        <div class="listing-content-head mb-3">
-                                            <div class="listing-rating"><span
-                                                    class="listing-rating-number">3.5</span> <i
-                                                    class="ion-md-star"></i></div>
-                                            <div class="listing-desc"><a href="list-details.html"
-                                                    class="listing-title text-truncate">Band Radius</a>
-                                                <p>1148 Webster Street,<br>KINGMAN, Arizona - 86402</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center ml-auto"><a href="#"
-                                            class="icon-sm text-danger"><i class="ion-md-create"></i> </a><a
-                                            href="#" class="icon-sm text-dark ml-3"><i
-                                                class="ion-md-trash"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6 list-bunch-item">
-                            <div class="listing-card">
-                                <div class="listing-image"><a href="list-details.html"><img
-                                            src="assets/images/listing/shop.jpg" class="retina" alt=""></a>
-                                </div>
-                                <div class="listing-content">
-                                    <div class="listing-content-body">
-                                        <div class="listing-content-head mb-3">
-                                            <div class="listing-rating"><span
-                                                    class="listing-rating-number">4</span> <i
-                                                    class="ion-md-star"></i></div>
-                                            <div class="listing-desc"><a href="list-details.html"
-                                                    class="listing-title text-truncate">A1 Shopping Mall</a>
-                                                <p>3284 Friendship Lane,<br>Concord, California - 94520</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center ml-auto"><a href="#"
-                                            class="icon-sm text-danger"><i class="ion-md-create"></i> </a><a
-                                            href="#" class="icon-sm text-dark ml-3"><i
-                                                class="ion-md-trash"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6 list-bunch-item">
-                            <div class="listing-card">
-                                <div class="listing-image"><a href="list-details.html"><img
-                                            src="assets/images/listing/hotel.jpg" class="retina" alt=""></a>
-                                </div>
-                                <div class="listing-content">
-                                    <div class="listing-content-body">
-                                        <div class="listing-content-head mb-3">
-                                            <div class="listing-rating"><span
-                                                    class="listing-rating-number">4.4</span> <i
-                                                    class="ion-md-star"></i></div>
-                                            <div class="listing-desc"><a href="list-details.html"
-                                                    class="listing-title text-truncate">Continental Hotel</a>
-                                                <p>4804 Rafe Lane,<br>Benoit, Mississippi - 38725</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center ml-auto"><a href="#"
-                                            class="icon-sm text-danger"><i class="ion-md-create"></i> </a><a
-                                            href="#" class="icon-sm text-dark ml-3"><i
-                                                class="ion-md-trash"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-xl-4 col-sm-6 list-bunch-item">
-                            <div class="listing-card">
-                                <div class="listing-image"><a href="list-details.html"><img
-                                            src="assets/images/listing/restaurante.jpg" class="retina"
-                                            alt=""></a></div>
-                                <div class="listing-content">
-                                    <div class="listing-content-body">
-                                        <div class="listing-content-head mb-3">
-                                            <div class="listing-rating"><span
-                                                    class="listing-rating-number">4</span> <i
-                                                    class="ion-md-star"></i></div>
-                                            <div class="listing-desc"><a href="list-details.html"
-                                                    class="listing-title text-truncate">Perfection
-                                                    Restaurant</a>
-                                                <p>3827 Shearwood Forest Drive,<br>Salem, New Hampshire - 03079
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="d-flex align-items-center ml-auto"><a href="#"
-                                            class="icon-sm text-danger"><i class="ion-md-create"></i> </a><a
-                                            href="#" class="icon-sm text-dark ml-3"><i
-                                                class="ion-md-trash"></i></a></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <nav class="mt-5">
-                        <ul class="pagination">
-                            <li class="page-item disabled"><a class="page-link" href="#"><i
-                                        class="ion-ios-arrow-back"></i> <span>Previous</span></a></li>
-                            <li class="page-item active"><a class="page-link" href="#">1</a></li>
-                            <li class="page-item"><a class="page-link" href="#">2</a></li>
-                            <li class="page-item"><a class="page-link" href="#">3</a></li>
-                            <li class="page-item"><a class="page-link" href="#"><span>Next</span> <i
-                                        class="ion-ios-arrow-forward"></i></a></li>
-                        </ul>
-                    </nav>
-                </div>
-            </div>
-           
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="bg-hm" style="background-image: url('assets/images/listing/e12.png');">
+                            <div class="card-hm">
+                                <!-- <h4 class="">Analysis</h4> -->
             
-        </div> -->
+                                <p>Improved understanding: Analysis allows for a deeper understanding of complex systems and
+                                    concepts by breaking them down into smaller, more manageable parts.In finance, analysis
+                                    is used to evaluate investment opportunities and assess the performance of investment
+                                    portfolios.
+                                </p>
+                            </div>
+                        </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                        <div class="bg-hm" style="background-image: url('assets/images/listing/e13.png');">
+                            <div class="card-hm">
+                                <!-- <h4 class="">Analysis</h4> -->
+            
+                                <p>Improved understanding: Analysis allows for a deeper understanding of complex systems and
+                                    concepts by breaking them down into smaller, more manageable parts.In finance, analysis
+                                    is used to evaluate investment opportunities and assess the performance of investment
+                                    portfolios.
+                                </p>
+                            </div>
+                        </div>
+                    </ng-template>
+                   
+                </owl-carousel-o>
+            </div>
+        </section>
+        
     </section>
     <section id="intro_section" class="banner-overlay hero-banner">
         <!-- <video autoplay muted loop>
@@ -189,7 +68,7 @@
                     <div class="col-xl-6 col-lg-11 mx-auto">
                         <!-- <h1 class="intro-section-title wow fade-in-down">Applying Data Science & Advanced Analytics To Life, Where Power Meets Purpose. 
                         </h1> -->
-                        
+
                         <!-- <div class="search-wrapper wow fade-in-up">
                             <div class="search-form">
                                 <div class="search-input"><label for="what"
@@ -237,7 +116,7 @@
                                 </div><button type="button" class="btn btn-danger">Search</button>
                             </div>
                         </div> -->
-                        
+
                     </div>
                 </div>
             </div>
@@ -264,7 +143,8 @@
                             <h4 class="mt-1 mb-3">Survey</h4>
                             <p>Surveys can be used to gather a wide range of information, including demographics,
                                 opinions, behaviors, and experiences, making them a versatile tool for research and data
-                                collection.Great for Gathering Qualitative Feedback. Perfect for Collecting Emotional Feedback.</p>
+                                collection.Great for Gathering Qualitative Feedback. Perfect for Collecting Emotional
+                                Feedback.</p>
                         </div>
                     </div>
                 </div>
@@ -275,7 +155,8 @@
                             <h4 class="mt-1 mb-3">Observation</h4>
                             <p>Observation allows for the collection of detailed, rich data, including both quantitative
                                 and qualitative information.Observation allows for the collection of detailed, rich
-                                data, including both quantitative and qualitative information.Observational studies include case reports and case series, ecological studies.</p>
+                                data, including both quantitative and qualitative information.Observational studies
+                                include case reports and case series, ecological studies.</p>
                         </div>
                     </div>
                 </div>
@@ -768,13 +649,15 @@
                 <div class="col-md-3 list-bunch-item wow fade-in-up">
                     <div class="blog-card">
                         <div class="hover-card mb-4">
-                            <a routerLink="/world-time-zone"><img
-                                    src="assets/images/blog/thumb/h1.png" class="retina" alt="">
+                            <a routerLink="/world-time-zone"><img src="assets/images/blog/thumb/h1.png" class="retina"
+                                    alt="">
                             </a>
                         </div>
                         <p class="tags mb-2"> <a routerLink="/world-time-zone">Observation</a></p>
-                        <h5 class="blog-title mb-3"><a routerLink="/world-time-zone"> "World Time Zone" synchronize time across the entire globe.</a></h5>
-                        <p><span class="text-muted">Feb 11, 2023 By </span><a routerLink="/world-time-zone">Admin</a></p>
+                        <h5 class="blog-title mb-3"><a routerLink="/world-time-zone"> "World Time Zone" synchronize time
+                                across the entire globe.</a></h5>
+                        <p><span class="text-muted">Feb 11, 2023 By </span><a routerLink="/world-time-zone">Admin</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3 list-bunch-item wow fade-in-up" data-wow-delay=".3s">
@@ -782,7 +665,8 @@
                         <div class="hover-card mb-4"><a routerLink="/map-globe-rotating"><img
                                     src="assets/images/blog/thumb/h2.png" class="retina" alt=""></a></div>
                         <p class="tags mb-2"> <a href="#">Observation</a></p>
-                        <h5 class="blog-title mb-3"><a routerLink="/map-globe-rotating">12 months rolling measles\nincidence per 1'000'000 total population.</a></h5>
+                        <h5 class="blog-title mb-3"><a routerLink="/map-globe-rotating">12 months rolling
+                                measles\nincidence per 1'000'000 total population.</a></h5>
                         <p><span class="text-muted">Feb 11, 2023 By </span><a href="/map-globe-rotating">Admin</a></p>
                     </div>
                 </div>
@@ -791,8 +675,10 @@
                         <div class="hover-card mb-4"><a routerLink="/map-globe-grouped"><img
                                     src="assets/images/blog/thumb/h3.png" class="retina" alt=""></a></div>
                         <p class="tags mb-2"><a href="">Observation</a></p>
-                        <h5 class="blog-title mb-3"><a routerLink="/map-globe-grouped">EU joined cut-off in 2021, the European Union (EU) had 27 member states:.</a></h5>
-                        <p><span class="text-muted">Feb 11, 2023 By </span><a routerLink="/map-globe-grouped">Admin</a></p>
+                        <h5 class="blog-title mb-3"><a routerLink="/map-globe-grouped">EU joined cut-off in 2021, the
+                                European Union (EU) had 27 member states:.</a></h5>
+                        <p><span class="text-muted">Feb 11, 2023 By </span><a routerLink="/map-globe-grouped">Admin</a>
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-3 list-bunch-item wow fade-in-up" data-wow-delay=".6s">
@@ -800,7 +686,8 @@
                         <div class="hover-card mb-4"><a routerLink="/map-globe-pulsating-bullets"><img
                                     src="assets/images/blog/thumb/h4.png" class="retina" alt=""></a></div>
                         <p class="tags mb-2"><a href="#">Observation</a></p>
-                            <h5 class="blog-title mb-3"><a routerLink="/map-globe-pulsating-bullets">European-Mediterranean Seismological Centre (EMSC) for information on recent earthquakes.</a></h5>
+                        <h5 class="blog-title mb-3"><a routerLink="/map-globe-pulsating-bullets">European-Mediterranean
+                                Seismological Centre (EMSC) for information on recent earthquakes.</a></h5>
                         <p><span class="text-muted">Feb 11, 2023 By </span><a href="#">Admin</a></p>
                     </div>
                 </div>
