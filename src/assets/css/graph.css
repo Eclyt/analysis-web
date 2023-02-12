@@ -2,7 +2,16 @@
     width: 100%;
     height: 400px;
 }
-
+#header > nav > div > a.navbar-brand > img{
+    max-width: -25px;
+    width: 35px;
+    height: 35px;
+}
+#headerAfterScroll > nav > div > a.navbar-brand > img{
+    max-width: -25px;
+    width: 35px;
+    height: 35px;
+}
 #chartdiv1 {
     width: 100%;
     height: 400px;

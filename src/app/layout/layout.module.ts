@@ -22,6 +22,12 @@ import { MapGlobeRotatingCircleComponent } from './map-globe-rotating-circle/map
 import { MapGlobePinBulletsComponent } from './map-globe-pin-bullets/map-globe-pin-bullets.component';
 import { MapGlobePieChartsComponent } from './map-globe-pie-charts/map-globe-pie-charts.component';
 import { MapGlobeGroupedComponent } from './map-globe-grouped/map-globe-grouped.component';
+import { TermsUseComponent } from './terms-use/terms-use.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { EclytPlusComponent } from './eclyt-plus/eclyt-plus.component';
+import { AnalysisComponent } from './analysis/analysis.component';
+import { SurveyComponent } from './survey/survey.component';
+import { ObservationComponent } from './observation/observation.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +48,13 @@ import { MapGlobeGroupedComponent } from './map-globe-grouped/map-globe-grouped.
     MapGlobeRotatingCircleComponent,
     MapGlobePinBulletsComponent,
     MapGlobePieChartsComponent,
-    MapGlobeGroupedComponent
+    MapGlobeGroupedComponent,
+    TermsUseComponent,
+    PrivacyPolicyComponent,
+    EclytPlusComponent,
+    AnalysisComponent,
+    SurveyComponent,
+    ObservationComponent
 
   ],
   imports: [

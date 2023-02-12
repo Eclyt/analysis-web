@@ -18,6 +18,11 @@ import { MapGlobeRotatingCircleComponent } from './map-globe-rotating-circle/map
 import { MapGlobePinBulletsComponent } from './map-globe-pin-bullets/map-globe-pin-bullets.component';
 import { MapGlobePieChartsComponent } from './map-globe-pie-charts/map-globe-pie-charts.component';
 import { MapGlobeGroupedComponent } from './map-globe-grouped/map-globe-grouped.component';
+import { EclytPlusComponent } from './eclyt-plus/eclyt-plus.component';
+import { TermsUseComponent } from './terms-use/terms-use.component';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
+import { SurveyComponent } from './survey/survey.component';
+import { AnalysisComponent } from './analysis/analysis.component';
 const routes: Routes = [
     {
         path: 'home',
@@ -94,6 +99,30 @@ const routes: Routes = [
     {
         path: 'map-globe-grouped',
         component: MapGlobeGroupedComponent,
+    },
+    {
+        path: 'eclyt-plus',
+        component: EclytPlusComponent,
+    },
+    {
+        path: 'analysis',
+        component: AnalysisComponent,
+    },
+    {
+        path: 'survey',
+        component: SurveyComponent,
+    },
+    {
+        path: 'observation',
+        component: SurveyComponent,
+    },
+    {
+        path: 'terms-use',
+        component: TermsUseComponent,
+    },
+    {
+        path: 'privacy-policy',
+        component: PrivacyPolicyComponent,
     },
 ];
 

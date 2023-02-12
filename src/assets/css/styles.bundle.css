@@ -2202,8 +2202,8 @@ body > app-root > app-home > app-header > header > nav > div > #hamburger span:b
     right: 0;
     bottom: 0;
     left: 0;
-    background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), to(#000));
-    background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0, #000 100%);
+    /* background: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgba(0, 0, 0, 0)), to(#000)); */
+    /* background: linear-gradient(0deg, rgba(0, 0, 0, 0) 0, #000 100%); */
     z-index: 1
 }
 
