@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+
+.footer .btn span{
+    display: block;
+}
+.rows-center{
+    justify-content: space-between;
+}
+.footer .btn.active i{
+    color:#eb354e;
+}
+
+.footer .btn i{
+    color: #000;
+}
+.sidebar.active{
+ right: 0  !important;
+}
+.nav-tabs li {
+    width: 50%;
+    text-align: center;
+}

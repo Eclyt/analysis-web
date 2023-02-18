@@ -1,7 +1,9 @@
-import { Component, OnInit, OnDestroy, Renderer2, ElementRef, ChangeDetectionStrategy, HostListener, Inject } from '@angular/core';
+import { Component, OnInit, OnDestroy, Renderer2, ElementRef, ChangeDetectionStrategy, HostListener, Inject, ViewChild } from '@angular/core';
 import { BehaviorSubject, Observable } from 'rxjs';
 import { ScrollService } from 'src/app/service/scroll.service';
 import { DOCUMENT } from '@angular/common';
+declare var $:any;
+
 @Component({
     selector: 'app-header',
     templateUrl: './header.component.html',
@@ -10,6 +12,18 @@ import { DOCUMENT } from '@angular/common';
 })
 export class HeaderComponent implements OnInit {
 
+
+    @ViewChild('hamburger', { static: true }) hamburger:any;
+    @ViewChild('close_sidebar', { static: true }) close_sidebar:any;
+
+    closeFunction(){
+        this.close_sidebar.nativeElement.click();
+    }
+    openFunction(){
+        console.log("open function ::::")
+        this.hamburger.nativeElement.click();
+    }
+    
     listener: any;
     height: any = 1
     scrollY$: Observable<number>;
@@ -50,6 +64,12 @@ export class HeaderComponent implements OnInit {
         // console.log("Y position ::"+ this.getYPosition(e));
 
         // });
+    $("#hamburger").click(function(){
+        alert("hi")
+        $("#sidebar").addClass("active");
+    });
+        
+    
     }
     getYPosition(e: Event): number {
         return (e.target as Element).scrollTop;
@@ -66,5 +86,6 @@ export class HeaderComponent implements OnInit {
             document.body.clientHeight, document.documentElement.clientHeight
         );
     }
+
 }
 
