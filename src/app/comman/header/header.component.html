@@ -13,7 +13,7 @@
                      <span><b>Eclyt</b></span><i class="ion-md-add"></i>
                     </a>
                 </li>
-            </ul><a href="javascript:void(0)" id="hamburger"><span></span></a>
+            </ul><a href="javascript:void(0)" id="hamburger" (click)="openFunction()"><span></span></a>
         </div>
     </nav>
 </header>
@@ -34,7 +34,7 @@
                     </a>
                 </li>
             </ul>
-            <a href="javascript:void(0);" id="hamburger" ><span></span></a>
+            <a href="javascript:void(0);" id="hamburger" (click)="openFunction()"><span></span></a>
         </div>
     </nav>
 
@@ -167,9 +167,9 @@
     </div>
 </div>
 
-<aside id="sidebar" class="sidebar ">
+<aside id="sidebar" class="sidebar">
     <div class="sidebar-header">
-        <a href="javascript:void(0);" id="close_sidebar">&times;</a>
+        <a href="javascript:void(0);" id="close_sidebar" (click)="closeFunction()">&times;</a>
     </div>
     <nav id="nav">
         <ul>

@@ -2,7 +2,7 @@ import { Component, OnInit, OnDestroy, Renderer2, ElementRef, ChangeDetectionStr
 import { BehaviorSubject, Observable } from 'rxjs';
 import { ScrollService } from 'src/app/service/scroll.service';
 import { DOCUMENT } from '@angular/common';
-declare var $:any;
+declare var $: any;
 
 @Component({
     selector: 'app-header',
@@ -13,17 +13,29 @@ declare var $:any;
 export class HeaderComponent implements OnInit {
 
 
-    @ViewChild('hamburger', { static: true }) hamburger:any;
-    @ViewChild('close_sidebar', { static: true }) close_sidebar:any;
+    @ViewChild('hamburger', { static: true }) hamburger: any;
+    @ViewChild('close_sidebar', { static: true }) close_sidebar: any;
 
-    closeFunction(){
-        this.close_sidebar.nativeElement.click();
+    closeFunction() {
+        let element: HTMLElement | null;
+        element = document.getElementById('sidebar')
+        if (element != null) {
+            // ✅ Remove class
+            element.classList.remove('active');
+        }
     }
-    openFunction(){
+    openFunction() {
+
         console.log("open function ::::")
-        this.hamburger.nativeElement.click();
+        let element: HTMLElement | null;
+        element = document.getElementById('sidebar')
+        if (element != null) {
+            // ✅ Add class
+            element.classList.add('active');
+
+        }
     }
-    
+
     listener: any;
     height: any = 1
     scrollY$: Observable<number>;
@@ -45,13 +57,13 @@ export class HeaderComponent implements OnInit {
     onWindowScroll() {
         const offset = this.document.documentElement.scrollTop || this.document.body.scrollTop || 0;
         if (offset > 30) {
-            this.scrollTop= false;
-            this.scrollSticky=true
+            this.scrollTop = false;
+            this.scrollSticky = true
             // this.renderer2.removeClass(this.el.nativeElement, 'before');
             // this.renderer2.addClass(this.el.nativeElement, 'after');
         } else {
-            this.scrollTop= true;
-            this.scrollSticky=false
+            this.scrollTop = true;
+            this.scrollSticky = false
             // this.renderer2.removeClass(this.el.nativeElement, 'after');
             // this.renderer2.addClass(this.el.nativeElement, 'before');
         }
@@ -64,18 +76,18 @@ export class HeaderComponent implements OnInit {
         // console.log("Y position ::"+ this.getYPosition(e));
 
         // });
-    $("#hamburger").click(function(){
-        alert("hi")
-        $("#sidebar").addClass("active");
-    });
-        
-    
+        $("#hamburger").click(function () {
+            alert("hi")
+            $("#sidebar").addClass("active");
+        });
+
+
     }
     getYPosition(e: Event): number {
         return (e.target as Element).scrollTop;
     }
     ngOnDestroy(): void {
-      
+
     }
 
     getScrollHeight(): number {
