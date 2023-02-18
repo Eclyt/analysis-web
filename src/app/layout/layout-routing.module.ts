@@ -23,6 +23,8 @@ import { TermsUseComponent } from './terms-use/terms-use.component';
 import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 import { SurveyComponent } from './survey/survey.component';
 import { AnalysisComponent } from './analysis/analysis.component';
+import { ServiceComponent } from './service/service.component';
+import { EpiComponent } from './epi/epi.component';
 const routes: Routes = [
     {
         path: 'home',
@@ -123,6 +125,14 @@ const routes: Routes = [
     {
         path: 'privacy-policy',
         component: PrivacyPolicyComponent,
+    },
+    {
+        path: 'service/:id',
+        component: ServiceComponent,
+    },
+    {
+        path: 'epi/:id',
+        component: EpiComponent,
     },
 ];
 

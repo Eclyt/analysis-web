@@ -88,7 +88,7 @@
             <div class="modal-body px-4 px-sm-5 pt-4">
                 <div class="tab-content" id="signContent">
                     <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="login-tab">
-                        <form action="#" class="pb-5">
+                        <form action="javascript:void(0)" class="pb-5">
                             <div class="form-group"><label for="username1" class="form-control-label">Username</label>
                                 <input id="username1" type="text" name="username1" placeholder="Enter username"
                                     class="form-control" required>
@@ -103,21 +103,27 @@
                             </div>
                             <div class="form-group d-flex align-items-center justify-content-between">
                                 <div class="checkbox"><input id="remember" type="checkbox"> <label
-                                        for="remember">Remember me</label></div><a href="#" class="link"
+                                        for="remember">Remember me</label></div><a href="javascript:void(0)" class="link"
                                     data-dismiss="modal" data-toggle="modal" data-target="#forgot">Forgot
                                     Password?</a>
                             </div><button type="submit" class="btn btn-danger btn-block">Sign in</button>
                             <div class="auth-modal-foot mt-4">
                                 <div class="mb-4 text-center">Or via Social</div>
-                                <div class="auth-modal-foot--btn"><a href="#" class="btn btn-icon btn-google"><i
-                                            class="ion-logo-google"></i> <span>Google</span> </a><a href="#"
-                                        class="btn btn-icon btn-twitter"><i class="ion-logo-twitter"></i>
-                                        <span>Twitter</span></a></div>
+                                <div class="auth-modal-foot--btn">
+                                    <a href="javascript:void(0)" class="btn btn-icon btn-google">
+                                        <i  class="ion-logo-google"></i> 
+                                        <span>Google</span>
+                                    </a>
+                                    <!-- <a href="javascript:void(0)"  class="btn btn-icon btn-twitter">
+                                        <i class="ion-logo-twitter"></i>
+                                        <span>Twitter</span>
+                                    </a> -->
+                                </div>
                             </div>
                         </form>
                     </div>
                     <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="register-tab">
-                        <form action="#" class="pb-5">
+                        <form action="javascript:void(0)" class="pb-5">
                             <div class="form-group"><label for="username2" class="form-control-label">Username</label>
                                 <input id="username2" type="text" name="username2" placeholder="Enter email/phone"
                                     class="form-control" required>
@@ -156,7 +162,7 @@
                     dolore!</p>
             </div>
             <div class="modal-body px-4 px-sm-5 pt-4">
-                <form action="#" class="pb-5">
+                <form action="javascript:void(0)" class="pb-5">
                     <div class="form-group"><label for="username3" class="form-control-label">Username</label>
                         <input id="username3" type="text" name="username3" placeholder="Enter email/phone"
                             class="form-control" required>
@@ -176,62 +182,20 @@
             <li class="nav-item nav-has-sub">
                 <a href="javascript:void(0);">Home</a>
                 <ul class="nav-sub-menu">
-                    <li><a href="index.html">Home v1</a></li>
-                    <li><a href="index2.html">Home v2</a></li>
-                    <li><a href="index3.html">Home v3</a></li>
+                    <li><a routerLink="/analysis">Analysis</a></li>
+                    <li><a routerLink="/survey">Survey</a></li>
+                    <li><a routerLink="/observation" >Observation</a></li>
                 </ul>
             </li>
             <li class="nav-item nav-has-sub">
-                <a href="javascript:void(0);">Listings</a>
+                <a href="javascript:void(0);">Other</a>
                 <ul class="nav-sub-menu">
-                    <li><a href="list-sidebar.html">List view (sidebar)</a></li>
-                    <li><a href="list-full-width.html">List view (full width)</a></li>
-                    <li><a href="list-map.html">List view (map)</a></li>
-                    <li><a href="grid-sidebar.html">Grid view (sidebar)</a></li>
-                    <li><a href="grid-full-width.html">Grid view (full width)</a></li>
-                    <li><a href="grid-map.html">Grid view (map)</a></li>
-                    <li><a href="list-details.html">List details</a></li>
+                    <li><a routerLink="/contact" >Contact</a></li>
+                    <li><a routerLink="/about" >About</a></li>
+
                 </ul>
             </li>
-            <li class="nav-item nav-has-sub">
-                <a href="javascript:void(0);">Admin Panel</a>
-                <ul class="nav-sub-menu">
-                    <li><a href="dashboard.html">Dashboard</a></li>
-                    <li><a href="invoice.html">Invoice</a></li>
-                    <li><a href="booking.html">Booking</a></li>
-                    <li><a href="wallet.html">Wallet</a></li>
-                    <li><a href="reviews.html">Reviews</a></li>
-                    <li><a href="add-listing.html">Add listing</a></li>
-                    <li><a href="my-listing.html">My listings</a></li>
-                    <li><a href="notification.html">Notification</a></li>
-                    <li><a href="profile.html">Profile</a></li>
-                </ul>
-            </li>
-            <li class="nav-item nav-has-sub">
-                <a href="javascript:void(0);">Pages</a>
-                <ul class="nav-sub-menu">
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="coming-soon.html">Coming soon</a></li>
-                    <li><a href="pricing.html">Pricing</a></li>
-                    <li><a href="faqs.html">FAQs</a></li>
-                    <li><a href="404.html">404</a></li>
-                </ul>
-            </li>
-            <li class="nav-item nav-has-sub">
-                <a href="javascript:void(0);">Blog</a>
-                <ul class="nav-sub-menu">
-                    <li><a href="blog-list.html">Blog lists</a></li>
-                    <li><a href="blog-details.html">Blog details</a></li>
-                </ul>
-            </li>
-            <li class="nav-item nav-has-sub">
-                <a href="javascript:void(0);">Other Pages</a>
-                <ul class="nav-sub-menu">
-                    <li><a href="guide.html">Style guide</a></li>
-                    <li><a href="elements.html">Elements</a></li>
-                </ul>
-            </li>
+            
         </ul>
     </nav>
 </aside>

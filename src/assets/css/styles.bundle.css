@@ -1447,7 +1447,7 @@ only screen and (min-resolution:2dppx) {
 
 .line-tabs.nav-tabs .nav-link.active {
     color: #eb354e;
-    border-bottom-color: #eb354e;
+    /* border-bottom-color: #eb354e; */
 }
 
 .link {

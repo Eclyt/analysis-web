@@ -28,6 +28,8 @@ import { EclytPlusComponent } from './eclyt-plus/eclyt-plus.component';
 import { AnalysisComponent } from './analysis/analysis.component';
 import { SurveyComponent } from './survey/survey.component';
 import { ObservationComponent } from './observation/observation.component';
+import { ServiceComponent } from './service/service.component';
+import { EpiComponent } from './epi/epi.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +56,9 @@ import { ObservationComponent } from './observation/observation.component';
     EclytPlusComponent,
     AnalysisComponent,
     SurveyComponent,
-    ObservationComponent
+    ObservationComponent,
+    ServiceComponent,
+    EpiComponent
 
   ],
   imports: [
